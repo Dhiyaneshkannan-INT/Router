@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: sandybrown;
+    padding: 20px 0px;
+}
+
+nav >h1 {
+    font-size: 25px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+ ul >a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+
+ }
