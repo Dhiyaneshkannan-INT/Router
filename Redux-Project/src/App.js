@@ -1,29 +1,17 @@
-import "./App.css";
+ import React from "react";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import User from "./Pages/User";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <ul className="App-header">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
-          </li>
-        </ul>
         <Routes>
-          <Route exact path="/" component={<Home />}></Route>
-          <Route exact path="/user" component={<User />}></Route>
-          <Route exact path="/contact" component={<Contact />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/user" element={<User />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
-      </div>
+ 
     </Router>
   );
 }
